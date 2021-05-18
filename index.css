@@ -2,11 +2,14 @@
     border: 0;
 }
 body{
-    /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(amakaa.jfif); */
+    /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(amakaa.jfif);
     background-position: fixed;
-    background-size: 90%;
+    background-size: 90%; */
     color:white;
     border: none;
+    margin: 0;
+    margin-bottom: 5rem;
+
 }
 #pagebg{
     position: fixed;
@@ -45,7 +48,7 @@ body{
 }
 .moha{
     font-size: 4rem;
-    margin: 1rem auto;
+    margin: 1rem 2rem;
     max-width: 1000px;
     
 }
@@ -88,6 +91,9 @@ i{
     padding: 1rem;
 }
 @media screen and (max-width: 400px) {
+    body{
+        text-align: center ;
+    }
     .moha{
     font-size: 2rem;
     margin: 1rem auto;
