@@ -1,19 +1,70 @@
-
+*{
+    border: 0;
+}
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(a.jpg);
+    /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(amakaa.jfif); */
     background-position: fixed;
-    background-size: 100%;
+    background-size: 90%;
     color:white;
+    border: none;
+}
+#pagebg{
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    overflow: hidden;
+    z-index: -100;
+}
+#bgimg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 55%;
+    min-height: 55%;
+    filter: blur(5px);
+}
+#navtitle{
+    max-width: fit-content;
     padding: 1rem;
+}
+#navbar{
+    width: 100%;
+    background-color: darkslategray;
+    overflow: hidden;
+    display: inline-flex;
+}
+#navicons{
+    right: 0;
+    position: fixed;
+    margin-right: 2rem;
 }
 .moha{
     font-size: 4rem;
     margin: 1rem auto;
-    max-width: 900px;
+    max-width: 1000px;
     
+}
+.sticky{
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 .fa-spotify{
     color: green;
+}
+.fa-snapchat{
+    color: yellow;
+}
+.fa-instagram{
+    color: rgb(163, 60, 78);
+}
+.fa-whatsapp{
+    color: rgb(52, 192, 52);
 }
 .fa-youtube{
     color: red;
@@ -26,14 +77,15 @@ body{
     height: 250px;
 }
 .songs{
-    margin: 3rem;
+    margin-left:5rem;
+    max-width: 500px;
     font-size: 1.5rem;
 }
 .stream{
     display: inline-block;
 }
 i{
-    padding: 1.2rem;
+    padding: 1rem;
 }
 @media screen and (max-width: 400px) {
     .moha{
@@ -45,5 +97,8 @@ i{
     .songs{
         margin: 1rem;
         font-size: 1rem;
+    }
+    i{
+        padding:0.8rem;
     }
 }
